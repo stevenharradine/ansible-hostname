@@ -1,2 +1,2 @@
 ---
-hostname: ubuntu
+hostname: "{{ project }}-{{ environment_tier }}"
