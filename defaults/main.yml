@@ -1,2 +1,3 @@
 ---
+hostname_dryrun: no
 hostname: "{{ project }}-{{ environment_tier }}"
