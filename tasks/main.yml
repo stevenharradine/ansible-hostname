@@ -2,10 +2,10 @@
 - name: change hostname
   hostname:
     name: "{{ hostname }}"
-  when: hostname_dryrun
+  when: not hostname_dryrun
 
 - name: update hosts
   lineinfile:
     dest: /etc/hosts
     line: "127.0.1.1       {{ hostname }}"
-  when: hostname_dryrun
+  when: not hostname_dryrun
